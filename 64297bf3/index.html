@@ -1,0 +1,327 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Markdown 语法简述 | Boyuz's Blog</title><meta name="author" content="Boyu Zhang,boyuzhang3356@163.com"><meta name="copyright" content="Boyu Zhang"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="markdown语法简述 Ctrl+. 可以在中文条件下切换半角&#x2F;全角输入  标题从1个#到6个＃依次表达6标题个数 123456#一级标题##二级标题###三级标题####四级标题#####五级标题######六级标题    段落12Markdown是一种轻量级标记语言(1.两个空格+Enter 2.连敲两个Enter实现段落换行)boyuz1018.top    字体1234567*">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 语法简述">
+<meta property="og:url" content="http://zboyuz.github.io/64297bf3/index.html">
+<meta property="og:site_name" content="Boyuz&#39;s Blog">
+<meta property="og:description" content="markdown语法简述 Ctrl+. 可以在中文条件下切换半角&#x2F;全角输入  标题从1个#到6个＃依次表达6标题个数 123456#一级标题##二级标题###三级标题####四级标题#####五级标题######六级标题    段落12Markdown是一种轻量级标记语言(1.两个空格+Enter 2.连敲两个Enter实现段落换行)boyuz1018.top    字体1234567*">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://zboyuz.github.io/images/avatar.png">
+<meta property="article:published_time" content="2024-07-24T03:39:18.000Z">
+<meta property="article:modified_time" content="2024-07-24T03:43:54.216Z">
+<meta property="article:author" content="Boyu Zhang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://zboyuz.github.io/images/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://zboyuz.github.io/64297bf3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Markdown 语法简述',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-24 11:43:54'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.pixabay.com/photo/2023/11/26/10/26/piano-8413277_1280.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Boyuz's Blog"><span class="site-name">Boyuz's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Markdown 语法简述</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-24T03:39:18.000Z" title="发表于 2024-07-24 11:39:18">2024-07-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-24T03:43:54.216Z" title="更新于 2024-07-24 11:43:54">2024-07-24</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Markdown 语法简述"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="markdown语法简述"><a href="#markdown语法简述" class="headerlink" title="markdown语法简述"></a>markdown语法简述</h1><blockquote>
+<p><code>Ctrl+.</code> 可以在中文条件下切换半角&#x2F;全角输入</p>
+</blockquote>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>从1个#到6个＃依次表达6标题个数</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">#一级标题</span></span><br><span class="line"><span class="section">##二级标题</span></span><br><span class="line"><span class="section">###三级标题</span></span><br><span class="line"><span class="section">####四级标题</span></span><br><span class="line"><span class="section">#####五级标题</span></span><br><span class="line"><span class="section">######六级标题</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Markdown是一种轻量级标记语言(1.两个空格+Enter 2.连敲两个Enter实现段落换行)</span><br><span class="line">boyuz1018.top</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span></span><br><span class="line"><span class="emphasis">_斜体_</span></span><br><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">__粗体__</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*粗斜体*</span>**</span></span><br><span class="line"><span class="strong">__<span class="emphasis">_粗斜体_</span>__</span></span><br><span class="line">一斜二粗三粗斜</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>显示效果为:</li>
+</ul>
+<p>​	<em>斜体</em></p>
+<p>​	<strong>粗体</strong></p>
+<p>​	<em><strong>粗斜体</strong></em></p>
+<h2 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a>分隔符</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---或者是***</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~要删除的部分~~</span><br></pre></td></tr></table></figure>
+
+<p><del>我是boyu</del></p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">u</span>&gt;</span></span>带下划线文本<span class="language-xml"><span class="tag">&lt;/<span class="name">u</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p><u>带下划线文本</u></p>
+<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>脚注是对文章中待解释的文本的补充说明</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">需要脚注的文字[^1]</span><br><span class="line">[^1]:oh!it&#x27;s Boyu!</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>显示效果</li>
+</ul>
+<p>​	需要脚注的文字[^1]</p>
+<p>[^1]:oh!it’s Boyu!</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*+Space</span><br></pre></td></tr></table></figure>
+
+<p>* </p>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1. (数字+.+Space)</span><br></pre></td></tr></table></figure>
+
+<p>1. </p>
+<h3 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">学习</span><br><span class="line"><span class="bullet">1.</span> 语文</span><br><span class="line"><span class="bullet">    *</span> 阅读</span><br><span class="line"><span class="bullet">    *</span> 写作</span><br><span class="line"><span class="bullet">2.</span> 数学</span><br><span class="line"><span class="bullet">3.</span> 英语</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 区块使用</span></span><br><span class="line"><span class="quote">&gt; 菜鸟教程</span></span><br><span class="line"><span class="quote">&gt; 技术改变世界</span></span><br><span class="line">特别注意!!!  &quot;&gt;&quot;后面要有一个Space</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>区块使用<br>菜鸟教程<br>技术改变世界</p>
+</blockquote>
+<h3 id="区块中使用列表"><a href="#区块中使用列表" class="headerlink" title="区块中使用列表"></a>区块中使用列表</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 数学一</span></span><br><span class="line"><span class="quote">&gt; * 高等数学</span></span><br><span class="line"><span class="quote">&gt; * 线性代数</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>数学一</p>
+<ul>
+<li>高等数学</li>
+<li>线性代数</li>
+</ul>
+</blockquote>
+<h3 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> Lebron James</span><br><span class="line"><span class="code">    &gt; Chosen 1</span></span><br><span class="line"><span class="code">    </span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>Lebron James<blockquote>
+<p>Chosen 1</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```代码块的生成</span><br><span class="line">`引用的代码`</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a);</span><br></pre></td></tr></table></figure>
+
+<p><code>printf</code></p>
+<p>注意以上符号为<strong>反引号</strong>(键盘上1左边的那个按键)而非引号</p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接名称</span>](<span class="link">链接地址</span>)</span><br></pre></td></tr></table></figure>
+
+<p><a href="zboyuz.github.io">我的blog</a></p>
+<h3 id="高级链接"><a href="#高级链接" class="headerlink" title="高级链接"></a>高级链接</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">第一个链接地址[<span class="string">baidu</span>][<span class="symbol">1</span>]</span><br><span class="line">第二个链接地址[<span class="string">tencent</span>][<span class="symbol">2</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[<span class="symbol">1</span>]:<span class="link">http://www.baidu.com</span></span><br><span class="line">[<span class="symbol">2</span>]:<span class="link">http://www.tencent.com</span></span><br></pre></td></tr></table></figure>
+
+<p>第一个链接地址<a target="_blank" rel="noopener" href="http://www.baidu.com/">baidu</a><br>第二个链接地址<a target="_blank" rel="noopener" href="http://www.tencent.com/">tencent</a></p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><h3 id="网上的图片"><a href="#网上的图片" class="headerlink" title="网上的图片"></a>网上的图片</h3><ol>
+<li>在网上找到需要的图片地址,点击复制图片地址</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![图片名字](图片地址)</span><br><span class="line">![图片名字](图片地址 &quot;可选标题&quot;)</span><br></pre></td></tr></table></figure>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScBMxHZtWC4yGVhz_M_ptDmmpTp94LDipD8A&s" alt="老大" style="zoom:100%;" />
+
+<ol start="2">
+<li>直接使用img的标签(此种方法可以调节大小)<ul>
+<li>&lt;img src&#x3D;”图片地址”,width&#x3D;”50%”&gt;</li>
+</ul>
+</li>
+</ol>
+<h3 id="本地图片"><a href="#本地图片" class="headerlink" title="本地图片"></a>本地图片</h3><p>可以直接复制粘贴来完成。</p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>用|来分隔不同的单元格,用-来分隔表头和其他行</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 表头 | 表头 |</span><br><span class="line">| ---- | ---- |</span><br><span class="line">| 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 |</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+</tbody></table>
+<h3 id="表格对齐方式"><a href="#表格对齐方式" class="headerlink" title="表格对齐方式"></a>表格对齐方式</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">右对齐: -:  (一个减号和一个冒号)</span><br><span class="line">左对齐: :-  (一个冒号和一个减号)</span><br><span class="line">居中对齐: :-:  (两个冒号夹着一个减号)</span><br><span class="line"></span><br><span class="line">eg:</span><br><span class="line">| 左对齐 | 右对齐 | 中对齐 |</span><br><span class="line">| :- | -: | :-: |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line">| 单元格 | 单元格 | 单元格 |</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+<tr>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<p>Note:  <strong>中间有几个-不影响显示效果</strong></p>
+<p><code>Ctrl+&#39;+&#39; / &#39;-&#39;</code>: 调节页面&#x2F;字体的大小</p>
+<hr>
+<p><code>---</code> :增加水平线</p>
+<h2 id="markdown的高级技巧"><a href="#markdown的高级技巧" class="headerlink" title="markdown的高级技巧"></a>markdown的高级技巧</h2><blockquote>
+<p>markdown支持一些HTML语言</p>
+</blockquote>
+<h3 id="使用标签对齐"><a href="#使用标签对齐" class="headerlink" title="使用标签对齐"></a>使用标签对齐</h3><p>用HTML语言中的<p>标签对齐</p>
+<ul>
+<li><p>右对齐<code>&lt;p align=&quot;right&quot;&gt;文字&lt;/p&gt;</code></p>
+</li>
+<li><p>居中<code>&lt;p align=&quot;center&quot;&gt;文字&lt;/p&gt;</code></p>
+</li>
+<li><p>左对齐<code>&lt;p align=&quot;left&quot;&gt;文字&lt;/p&gt;</code></p>
+<p><strong>显示效果</strong>:</p>
+<p align="right">文字</p>
+
+<p align="center">文字</p>`
+
+<p align="left">文字</p></li>
+</ul>
+<h2 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h2><p>在以下符号前加上反斜杠\可以输入普通的符号</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\ 反斜线</span><br><span class="line">` 反引号</span><br><span class="line">* 星号</span><br><span class="line">_ 下划线</span><br><span class="line">&#123;&#125; 花括号</span><br><span class="line">[] 方括号</span><br><span class="line">() 小括号</span><br><span class="line"># 井字号</span><br><span class="line">+ 加号</span><br><span class="line">- 减号</span><br><span class="line">. 英文句号</span><br><span class="line">! 感叹号</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>用美元符号包裹</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ f(x)=sinx $</span><br></pre></td></tr></table></figure>
+
+<p>这是一个行内公式：$E&#x3D;mc^2$</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">这是一个块级公式</span><br><span class="line">$$</span><br><span class="line">E = mc^2</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+
+
+
+<p>这是一个块级公式：</p>
+<p>$$<br>E &#x3D; mc^2<br>$$</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://zboyuz.github.io">Boyu Zhang</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://zboyuz.github.io/64297bf3/">http://zboyuz.github.io/64297bf3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://zboyuz.github.io" target="_blank">Boyuz's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/images/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/dfb8a81f/" title="技术随想"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">技术随想</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/images/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Boyu Zhang</div><div class="author-info__description">别忘了看见箱子里的绵羊🐏</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zboyuz" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:boyuzhang3356@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2902922807&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">markdown语法简述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AE%B5%E8%90%BD"><span class="toc-number">1.2.</span> <span class="toc-text">段落</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">1.3.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%9A%94%E7%AC%A6"><span class="toc-number">1.4.</span> <span class="toc-text">分隔符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-number">1.5.</span> <span class="toc-text">删除线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="toc-number">1.6.</span> <span class="toc-text">下划线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%84%9A%E6%B3%A8"><span class="toc-number">1.7.</span> <span class="toc-text">脚注</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">1.8.</span> <span class="toc-text">列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.8.1.</span> <span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">1.8.2.</span> <span class="toc-text">有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E5%B5%8C%E5%A5%97"><span class="toc-number">1.8.3.</span> <span class="toc-text">列表嵌套</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97"><span class="toc-number">1.9.</span> <span class="toc-text">区块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%88%97%E8%A1%A8"><span class="toc-number">1.9.1.</span> <span class="toc-text">区块中使用列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%97%E8%A1%A8%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%8C%BA%E5%9D%97"><span class="toc-number">1.9.2.</span> <span class="toc-text">列表中使用区块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="toc-number">1.9.3.</span> <span class="toc-text">代码块</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-number">1.10.</span> <span class="toc-text">链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E9%93%BE%E6%8E%A5"><span class="toc-number">1.10.1.</span> <span class="toc-text">高级链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">1.11.</span> <span class="toc-text">图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E4%B8%8A%E7%9A%84%E5%9B%BE%E7%89%87"><span class="toc-number">1.11.1.</span> <span class="toc-text">网上的图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87"><span class="toc-number">1.11.2.</span> <span class="toc-text">本地图片</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">1.12.</span> <span class="toc-text">表格</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC%E5%AF%B9%E9%BD%90%E6%96%B9%E5%BC%8F"><span class="toc-number">1.12.1.</span> <span class="toc-text">表格对齐方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown%E7%9A%84%E9%AB%98%E7%BA%A7%E6%8A%80%E5%B7%A7"><span class="toc-number">1.13.</span> <span class="toc-text">markdown的高级技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%A0%87%E7%AD%BE%E5%AF%B9%E9%BD%90"><span class="toc-number">1.13.1.</span> <span class="toc-text">使用标签对齐</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89"><span class="toc-number">1.14.</span> <span class="toc-text">转义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F"><span class="toc-number">1.15.</span> <span class="toc-text">公式</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/64297bf3/" title="Markdown 语法简述">Markdown 语法简述</a><time datetime="2024-07-24T03:39:18.000Z" title="发表于 2024-07-24 11:39:18">2024-07-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/dfb8a81f/" title="技术随想">技术随想</a><time datetime="2024-07-23T01:49:18.000Z" title="发表于 2024-07-23 09:49:18">2024-07-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/be82d226/" title="代码演示">代码演示</a><time datetime="2024-07-23T01:23:10.000Z" title="发表于 2024-07-23 09:23:10">2024-07-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Boyu Zhang</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
